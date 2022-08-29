@@ -1,9 +1,4 @@
-﻿Console.WriteLine("Введите трехзначное число.\nВыхода из программы команда Exit.");
-    while(true)
-    {
-        string input = Console.ReadLine();
-        if(!input.Equals("exit"))
-            Console.WriteLine("{0}->{1}",input, input[1]);
-        else
-            break;
-    }
+﻿Console.Write("Введи трёхзначное число: ");
+int threeDigitNumber = Convert.ToInt32(Console.ReadLine());
+string stringNumber = Convert.ToString(threeDigitNumber);
+Console.WriteLine("вторая цифра этого числа -> "+stringNumber[1]);
